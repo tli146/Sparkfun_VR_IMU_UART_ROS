@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name> Sparkfun_VR_IMU </name>
+  <version> 0.0.1 </version>
+  <description> ROS node for bno080 IMU  </description>
+  <maintainer email="tli146@hotmail.com">Tony Li</maintainer>
+
+  <license> Apache 2.0 </license>
+
+  <author> Tony Li</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>rospy</depend>
+  <depend>sensor_msgs</depend>
+
+</package>
