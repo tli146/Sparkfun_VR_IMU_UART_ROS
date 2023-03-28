@@ -9,7 +9,7 @@ from sensor_msgs.msg import Imu
 
 
 ser = serial.Serial(
-    port='/dev/ttyAMA0',\
+    port='/dev/ftdiUsb',\
     baudrate=115200,\
     parity=serial.PARITY_NONE,\
     stopbits=serial.STOPBITS_ONE,\
@@ -142,6 +142,7 @@ def namingFunction(array1):
     return ZACCEL2, ZACCEL1,YACCEL1, YACCEL2, XACCEL1, XACCEL2,ROLL1,ROLL2,PITCH1,PITCH2,YAW1,YAW2,INDEX,YAW,PITCH,ROLL,XACCEL,YACCEL,ZACCEL
 
 while True:
+    
     for c in ser.readline().hex():
         seq.append(c)
         count += 1

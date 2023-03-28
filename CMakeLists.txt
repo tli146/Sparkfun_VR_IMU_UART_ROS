@@ -8,7 +8,7 @@ find_package(catkin REQUIRED COMPONENTS
    
    
 )
-project( Sparkfun_VR_IMU )
+project( sparkfun_VR_IMU )
 catkin_package(
   CATKIN_DEPENDS rospy sensor_msgs
 )

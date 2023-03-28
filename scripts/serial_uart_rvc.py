@@ -2,7 +2,7 @@ import serial
 import time 
 
 ser = serial.Serial(
-    port='/dev/cu.usbserial-A5XK3RJT',\
+    port='/dev/ftdiUsb',\
     baudrate=115200,\
     parity=serial.PARITY_NONE,\
     stopbits=serial.STOPBITS_ONE,\
@@ -99,7 +99,7 @@ def namingFunction(array1):
     XACCEL = 0.001 * twos_complement(XACCEL1,8) + twos_complement(XACCEL2,8)
     YACCEL = 0.001 * twos_complement(YACCEL1,8) + twos_complement(YACCEL2,8)
     ZACCEL = 0.001 * twos_complement(ZACCEL1,8) + twos_complement(ZACCEL2,8)
-    print("Yaw - ", YAWa, "Pitch - ", PITCH, "Roll - ", ROLL, "Accelerations - ", XACCEL,YACCEL,ZACCEL)
+    print("Yaw - ", YAW, "Pitch - ", PITCH, "Roll - ", ROLL, "Accelerations - ", XACCEL,YACCEL,ZACCEL)
     return ZACCEL2, ZACCEL1,YACCEL1, YACCEL2, XACCEL1, XACCEL2,ROLL1,ROLL2,PITCH1,PITCH2,YAW1,YAW2,INDEX,YAW,PITCH,ROLL,XACCEL,YACCEL,ZACCEL
 
 while True:

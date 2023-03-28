@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name> Sparkfun_VR_IMU </name>
+  <name> sparkfun_VR_IMU </name>
   <version> 0.0.1 </version>
   <description> ROS node for bno080 IMU  </description>
   <maintainer email="tli146@hotmail.com">Tony Li</maintainer>
